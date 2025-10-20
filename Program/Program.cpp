@@ -1,7 +1,8 @@
 ﻿#include <iostream>
 
+using namespace std;
 
-template<typename T>
+template <typename T>
 class List
 {
 private:
@@ -9,146 +10,111 @@ private:
     {
         T data;
         Node* next;
-        Node* prev;
     };
-
-    Node* head;
-    Node* tail;
-
     int size;
+    Node* head;
 public:
     List()
     {
         size = 0;
         head = nullptr;
-        tail = nullptr;
-
-    }
-    void push_front(T data)
-    {
-        Node* newNode=new Node;
-        newNode->data = data;
-        newNode->next = nullptr;
-        newNode->prev = nullptr;
-        if (head == nullptr)
-        {
-            head = newNode;
-            tail = newNode;
-
-        }
-        else
-        {
-            head->prev = newNode;
-            newNode->next = head;
-            head = newNode;
-
-        }
-        size++;
-    }
-    void pop_front()
-    {
-        if (size <= 0)
-        {
-            std::cout << "Link is empty." << std::endl;
-        }
-        else 
-        {
-            Node* deleteNode = head;
-            if(head==tail)
-            {
-                head = nullptr;
-                tail = nullptr;
-            }
-            else
-            {
-                deleteNode->next->prev = nullptr;
-
-                head = head->next;
-            }
-            delete deleteNode;
-            size--;
-        }
-        
-
     }
     void push_back(T data)
     {
         Node* newNode = new Node;
         newNode->data = data;
-        newNode->next = nullptr;
-        newNode->prev = nullptr;
-        if (tail == nullptr)
+        if (head == nullptr)
         {
             head = newNode;
-            tail = newNode;
+            newNode->next = head;
         }
         else
         {
-            tail->next = newNode;
-            newNode->prev = tail;
-            tail = newNode;
+            newNode->next = head->next;
+            head->next = newNode;
+            head = newNode;
 
         }
         size++;
     }
-    void pop_back()
+    void push_front(T data)
     {
-        if (size <= 0)
+        Node* newNode = new Node;
+        newNode->data = data;
+        if (head == nullptr)
         {
-            std::cout << "List is empty." << std::endl;
+            head = newNode;
+            newNode->next = head;
         }
         else
         {
-            Node* deleteNode = tail;
-            if (head == tail)
+            newNode->next = head->next;
+            head->next = newNode;
+        }
+        size++;
+
+        
+    }
+    void pop_front()
+    {
+       
+        if (head == nullptr)
+        {
+            cout << "Linked list is empty" << endl;
+        }
+        else
+        {
+            Node* delNode = head->next;
+            if (head == delNode)
             {
                 head = nullptr;
-                tail = nullptr;
             }
             else
             {
-                deleteNode->prev->next = nullptr;
-                tail = tail->prev;
+                head->next = delNode->next;
             }
-            delete deleteNode;
-            size--;
+            delete delNode;
         }
-        
-        
+        size--;
     }
-    const bool empty()
+    void pop_back()
     {
-        return (head == nullptr);
-    }
-    ~List()
-    {
-        while (tail != nullptr)
+        if (head == nullptr)
         {
-            pop_front();
+            cout << "Linked list is empty" << endl;
+        }
+        else
+        {
+            Node* delNode = head;
+            if (size == 1)
+            {
+                head = nullptr;
+            }
+            else
+            {
+               
+            }
+            delete delNode;
         }
     }
 };
 
 
-
-
-
 int main()
 {
-
     List<int> List;
 
-    List.push_front(10);
-    List.push_front(5);
-
+    List.push_back(10);
     List.push_back(20);
     List.push_back(30);
 
+    List.push_front(5);
 
-    List.pop_back();
-    List.pop_back(); 
-    List.pop_back();
-    List.pop_back();
-    List.pop_back();
+    List.pop_front();
+    List.pop_front();
+    List.pop_front();
+    List.pop_front();
+    List.pop_front();
+
     return 0;
 }

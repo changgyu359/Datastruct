@@ -7,6 +7,9 @@
       "RelativeMoniker": "D:0:0:{478C5777-559B-49C1-8144-4FB7D1F89DDF}|Program.vcxproj|solutionrelative:Program.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{38636191-E2DD-4A2C-8034-F93568B0A804}|..\\Class2th (Double Linked List)\\Class2th (Double Linked List).vcxproj|C:\\Users\\user\\Desktop\\Datastruct\\Class2th (Double Linked List)\\Class2th (Double Linked List).cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{F168D765-07B0-4B3B-B13C-D3E2C97373AD}|..\\Class1th (Single Linked List)\\Class1th (Single Linked List).vcxproj|C:\\Users\\user\\Desktop\\Datastruct\\Class1th (Single Linked List)\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
@@ -17,11 +20,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "Class2th (Double Linked List).cpp",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Datastruct\\Class2th (Double Linked List)\\Class2th (Double Linked List).cpp",
+              "RelativeDocumentMoniker": "..\\Class2th (Double Linked List)\\Class2th (Double Linked List).cpp",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Datastruct\\Class2th (Double Linked List)\\Class2th (Double Linked List).cpp",
+              "RelativeToolTip": "..\\Class2th (Double Linked List)\\Class2th (Double Linked List).cpp",
+              "ViewState": "AgIAAE4AAAAAAAAAAAAAAJoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-10-20T09:24:05.533Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Source.cpp",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\Datastruct\\Class1th (Single Linked List)\\Source.cpp",
               "RelativeDocumentMoniker": "..\\Class1th (Single Linked List)\\Source.cpp",
@@ -29,8 +45,7 @@
               "RelativeToolTip": "..\\Class1th (Single Linked List)\\Source.cpp",
               "ViewState": "AgIAAIcAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-10-17T10:36:55.252Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-17T10:36:55.252Z"
             },
             {
               "$type": "Document",
@@ -40,7 +55,7 @@
               "RelativeDocumentMoniker": "Program.cpp",
               "ToolTip": "C:\\Users\\user\\Desktop\\Datastruct\\Program\\Program.cpp",
               "RelativeToolTip": "Program.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAADAAAAAAAAAA==",
+              "ViewState": "AgIAAD0AAAAAAAAAAAAqwF4AAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-10-15T09:07:30.143Z",
               "EditorCaption": ""
