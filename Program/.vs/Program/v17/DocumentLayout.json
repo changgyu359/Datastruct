@@ -7,10 +7,13 @@
       "RelativeMoniker": "D:0:0:{478C5777-559B-49C1-8144-4FB7D1F89DDF}|Program.vcxproj|solutionrelative:Program.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{38636191-E2DD-4A2C-8034-F93568B0A804}|..\\Class2th (Double Linked List)\\Class2th (Double Linked List).vcxproj|C:\\Users\\user\\Desktop\\Datastruct\\Class2th (Double Linked List)\\Class2th (Double Linked List).cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{AE7C0366-24F0-4F29-819E-332FC9D017C1}|..\\Class3th (Circle Linked List)\\Class3th (Circle Linked List).vcxproj|C:\\Users\\user\\Desktop\\Datastruct\\Class3th (Circle Linked List)\\Class3th (Circle Linked List).cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F168D765-07B0-4B3B-B13C-D3E2C97373AD}|..\\Class1th (Single Linked List)\\Class1th (Single Linked List).vcxproj|C:\\Users\\user\\Desktop\\Datastruct\\Class1th (Single Linked List)\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\crt\\src\\vcruntime\\delete_scalar.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -20,19 +23,32 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Class2th (Double Linked List).cpp",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Datastruct\\Class2th (Double Linked List)\\Class2th (Double Linked List).cpp",
-              "RelativeDocumentMoniker": "..\\Class2th (Double Linked List)\\Class2th (Double Linked List).cpp",
-              "ToolTip": "C:\\Users\\user\\Desktop\\Datastruct\\Class2th (Double Linked List)\\Class2th (Double Linked List).cpp",
-              "RelativeToolTip": "..\\Class2th (Double Linked List)\\Class2th (Double Linked List).cpp",
-              "ViewState": "AgIAAE4AAAAAAAAAAAAAAJoAAAAAAAAAAAAAAA==",
+              "Title": "Class3th (Circle Linked List).cpp",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Datastruct\\Class3th (Circle Linked List)\\Class3th (Circle Linked List).cpp",
+              "RelativeDocumentMoniker": "..\\Class3th (Circle Linked List)\\Class3th (Circle Linked List).cpp",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Datastruct\\Class3th (Circle Linked List)\\Class3th (Circle Linked List).cpp",
+              "RelativeToolTip": "..\\Class3th (Circle Linked List)\\Class3th (Circle Linked List).cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-10-20T09:24:05.533Z",
+              "WhenOpened": "2025-10-21T09:45:36.43Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "delete_scalar.cpp",
+              "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\crt\\src\\vcruntime\\delete_scalar.cpp",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\crt\\src\\vcruntime\\delete_scalar.cpp",
+              "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\crt\\src\\vcruntime\\delete_scalar.cpp",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\crt\\src\\vcruntime\\delete_scalar.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-10-21T09:22:30.378Z",
               "EditorCaption": ""
             },
             {
@@ -45,7 +61,8 @@
               "RelativeToolTip": "..\\Class1th (Single Linked List)\\Source.cpp",
               "ViewState": "AgIAAIcAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-10-17T10:36:55.252Z"
+              "WhenOpened": "2025-10-17T10:36:55.252Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -55,7 +72,7 @@
               "RelativeDocumentMoniker": "Program.cpp",
               "ToolTip": "C:\\Users\\user\\Desktop\\Datastruct\\Program\\Program.cpp",
               "RelativeToolTip": "Program.cpp",
-              "ViewState": "AgIAAD0AAAAAAAAAAAAqwF4AAAAPAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-10-15T09:07:30.143Z",
               "EditorCaption": ""

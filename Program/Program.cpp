@@ -2,119 +2,46 @@
 
 using namespace std;
 
-template <typename T>
-class List
+template<typename T>
+class Vector
 {
 private:
-    struct Node
-    {
-        T data;
-        Node* next;
-    };
-    int size;
-    Node* head;
+    
+    int count;
+    int capacity;
+    T* pointer;
 public:
-    List()
+    Vector()
     {
-        size = 0;
-        head = nullptr;
-    }
-    void push_back(T data)
-    {
-        Node* newNode = new Node;
-        newNode->data = data;
-        if (head == nullptr)
-        {
-            head = newNode;
-            newNode->next = head;
-        }
-        else
-        {
-            newNode->next = head->next;
-            head->next = newNode;
-            head = newNode;
-
-        }
-        size++;
-    }
-    void push_front(T data)
-    {
-        Node* newNode = new Node;
-        newNode->data = data;
-        if (head == nullptr)
-        {
-            head = newNode;
-            newNode->next = head;
-        }
-        else
-        {
-            newNode->next = head->next;
-            head->next = newNode;
-        }
-        size++;
+        count = 0;
+        capacity = 0;
+        pointer = nullptr;
 
         
     }
-    void pop_front()
+
+    void resize(int newSize)
     {
-       
-        if (head == nullptr)
-        {
-            cout << "Linked list is empty" << endl;
-        }
-        else
-        {
-            Node* delNode = head->next;
-            if (head == delNode)
-            {
-                head = nullptr;
-            }
-            else
-            {
-                head->next = delNode->next;
-            }
-            delete delNode;
-        }
-        size--;
-    }
-    void pop_back()
-    {
-        if (head == nullptr)
-        {
-            cout << "Linked list is empty" << endl;
-        }
-        else
-        {
-            Node* delNode = head;
-            if (size == 1)
-            {
-                head = nullptr;
-            }
-            else
-            {
-               
-            }
-            delete delNode;
-        }
+        capacity = newsize;
+        //1. 새로운 size값 저장
+        T* newpointer = new T;
+        //2,3.포인터 변수 생성 및 값 초기화
+        //몷루....
+        //4.기존 배열값 복사후 새로운 배열에 추가
+        T* temporary = pointer;
+            delete temporary;
+        //5. 기존 배열 메모리 해제
+        pointer = newpointer;
+        //6.기존 배열의 포인터 변수를 새로운 포인터로 변경
+        
+        
     }
 };
 
 
 int main()
 {
-    List<int> List;
-
-    List.push_back(10);
-    List.push_back(20);
-    List.push_back(30);
-
-    List.push_front(5);
-
-    List.pop_front();
-    List.pop_front();
-    List.pop_front();
-    List.pop_front();
-    List.pop_front();
+    Vector<int> vector;
 
     return 0;
 }
