@@ -2,46 +2,55 @@
 
 using namespace std;
 
-template<typename T>
-class Vector
+template <typename T>
+class Stack
 {
 private:
-    
-    int count;
+    int highset;
     int capacity;
-    T* pointer;
+    T* container;
 public:
-    Vector()
+    Stack()
     {
-        count = 0;
+        highset = -1;
         capacity = 0;
-        pointer = nullptr;
-
-        
+        container = nullptr;
     }
 
-    void resize(int newSize)
+    void resize(int newsize)
     {
         capacity = newsize;
-        //1. 새로운 size값 저장
-        T* newpointer = new T;
-        //2,3.포인터 변수 생성 및 값 초기화
-        //몷루....
-        //4.기존 배열값 복사후 새로운 배열에 추가
-        T* temporary = pointer;
-            delete temporary;
-        //5. 기존 배열 메모리 해제
-        pointer = newpointer;
-        //6.기존 배열의 포인터 변수를 새로운 포인터로 변경
-        
-        
+
+        T* temporary = new T[capacity];
+
+        for (int i = 0; i < capacity; i++)
+        {
+            temporary[i] = NULL;
+        }
+
+        for (int i = 0; i < count; i++)
+        {
+            temporary[i] = container[i];
+        }
+
+
+        delete[] container;
+
+        container = temporary;
+
+    }
+    void push(T data)
+    {
+        if (capacity - 1 <= highset)
+        {
+            capacity++;
+        }
+        container[highset++] = data;
     }
 };
 
-
 int main()
 {
-    Vector<int> vector;
-
+   
     return 0;
 }
