@@ -3,84 +3,101 @@
 
 using namespace std;
 
-template<typename T>
-class Queue
+template <typename T>
+class PriorityQueue
 {
 private:
-	int rear;
-	int front;
-	T container[SIZE];
+	int index;
+	int capacity;
+	T* container;
 public:
-	Queue()
+	PriorityQueue()
 	{
-		rear = SIZE-1;
-		front = SIZE - 1;
-		for (int i = 0; i < SIZE; i++)
-		{
-			container[i] = NULL;
-		}
+		index = 0;
+		capacity = 0;
+		container = nullptr;
 	}
+
+	void resize(int newsize)
+	{
+		capacity = newsize;
+
+		T* temporary = new T[capacity];
+
+		for (int i = 0; i < capacity; i++)
+		{
+			temporary[i] = NULL;
+		}
+
+		for (int i = 0; i < index; i++)
+		{
+			temporary[i] = container[i];
+		}
+
+
+		delete[] container;
+
+		container = temporary;
+
+	}
+
 	void push(T data)
 	{
-		if ((rear + 1) % SIZE == front)
+		if (capacity <= 0)
 		{
-			cout << "Queue overflow" << endl;
+			resize(1);
 		}
-		else
+		else if (capacity <= index)
 		{
-			rear = (rear + 1) % SIZE;
-			container[rear] = data;
-		} 
-	}
-	void pop()
-	{
-		if (empty())
-		{
-			cout << "Queue is empty" << endl;
+
+			resize(capacity * 2);
+
 		}
-		else
+		container[index++] = data;
+		int child = index-1;
+		int parent = (child - 1) / 2;
+
+		while(child > 0)
 		{
-			front = (front + 1) % SIZE;
-			container[front] = NULL;
+			if (container[parent] < container[child])
+			{
+				std::swap(container[parent], container[child]);
+			}
+			child = parent;
+			parent = (child - 1) / 2;
 		}
+
 	}
 
-	const bool& empty()
+	~PriorityQueue()
 	{
-		return front == rear;
+
 	}
 
-	const T& peek()
+	const T & top()
 	{
-		if (empty())
+		if(index==0)
 		{
 			exit(1);
 		}
 		else
 		{
-			return container[(front + 1) % SIZE];
+			return container[0];
 		}
 	}
+
+	
 };
 
 int main()
 {
-	Queue<int> queue;
+	PriorityQueue<int> priqueue;
 
-	queue.push(10);
-	queue.push(20);
-	queue.push(30);
+	priqueue.push(10);
+	priqueue.push(20);
+	priqueue.push(5);
+	priqueue.push(33);
 
-	while(queue.empty() == false)
-	{
-		cout << queue.peek() << endl;
-		queue.pop();
-	}
-	
-	queue.push(40);
-	queue.push(50);
-	queue.push(60);
-	
-
+	cout<<priqueue.top();
 	return 0;
 }
