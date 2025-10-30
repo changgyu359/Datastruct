@@ -64,16 +64,101 @@ public:
 
 	void insert(KEY key, VALUE value)
 	{
-		Node* newnode = new Node;
+		
+		//해시 함수를 통해서 값을 받는 임시 변수
+		int hashIndex = hash_function(key);
 
-		newnode->key = hash_function(key);
+		//새로운 노드 생성
+		Node* newnode = new Node;
+		newnode->key = key;
 		newnode->value = value;
 
-		newnode->next = bucket[key]->head;
-		bucket[key]->head = newnode;
+		newnode->next = nullptr;
 
+		//노드가 1개라도 존재하지 않는다면
+
+		if (bucket[hashIndex].count == 0)
+		{
+			bucket[hashIndex].head = newnode;
+		}
+		else
+		{
+			newnode->next = bucket[hashIndex].head;
+
+			bucket[hashIndex].head = newnode;
+		}
+		
+		
 		size++;
-		bucket->count++;
+		bucket[hashIndex].count++;
+
+	}
+
+	void erase(KEY key)
+	{
+		//1.해시 함수를 통해서 값을 받는 임시 변수
+		int hashIndex = hash_function(key);
+
+		//2.Node를 탐색할 수 있는 포인터 변수 선언
+		Node* currentnode = bucket[hashIndex].head ;
+
+		//3.이전 Node를 저장할 수 있는 포인터 변수 선언
+		Node* prenode = nullptr;
+
+		//4.currentnode가 nullptr과 같다면 함수를 종료
+		if (currentnode==nullptr)
+		{
+			cout << "not key found..." << endl;
+		}
+		else
+		{
+			//5.currentnode를 이용해서 내가 찾고자 하는 key값을 찾기
+			
+			while (currentnode!=nullptr)
+			{
+				if (currentnode->key == key)
+				{
+					if (currentnode == bucket[hashIndex].head)
+					{
+						bucket[hashIndex].head = currentnode->next;
+					}
+					else
+					{
+						prenode->next = currentnode->next;
+					}
+
+					size--;
+
+					bucket[hashIndex].count--;
+
+					delete currentnode;
+
+					return;
+				}
+				else
+				{
+					prenode = currentnode;
+					currentnode = currentnode->next;
+				}
+				
+			}
+
+			cout << "not key found..." << endl;
+		}
+	}
+
+	const float& load_factor()
+	{
+		return (float)size / capacity;
+	}
+
+	const int& bucket_count()
+	{
+		return capacity;
+	}
+
+	~HashTable()
+	{
 
 	}
 };
@@ -82,9 +167,15 @@ int main()
 {
 	HashTable<const char*, int> hashtable;
 
-	cout<<hashtable.hash_function("korea")<<endl;
-	cout<<hashtable.hash_function("razil") << endl;
-	cout<< hashtable.hash_function("China") << endl;
+	hashtable.insert("심연의 가면", 3000);
+	hashtable.insert("바미의 불씨", 1000);
+	hashtable.insert("사슬갑옷", 800);
+
+	hashtable.erase("심연의 가면");
+	hashtable.erase("돌풍");
+	
+	cout << hashtable.load_factor() << endl;
+	cout << hashtable.bucket_count() << endl;
 
 	return 0;
 }
