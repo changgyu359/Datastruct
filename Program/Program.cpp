@@ -18,16 +18,68 @@ public:
 	Graph()
 	{
 		size = 0;
-		cout = 0;
+		count = 0;
 		capacity = 0;
 		vertex = nullptr;
 		matrix = nullptr;
+	}
+
+	void push(T data)
+	{
+		if (capacity <= 0)
+		{
+			resize(1);
+		}
+		else if (capacity <= size)
+		{
+			resize(capacity * 2);
+		}
+
+		vertex[size++] = data;
+	}
+
+	void resize(int newSize)
+	{
+		capacity = newSize;
+
+		T* container = new T[capacity];
+
+		for (int i = 0; i < capacity; i++)
+		{
+			container[i] = NULL;
+		}
+
+		for (int i = 0; i < size; i++)
+		{
+			container[i] = vertex[i];
+		}
+
+		delete[] vertex;
+
+		vertex = container;
+	}
+
+	void edge(int i, int j)
+	{
+		if ()
+		{
+			cout << "adjacency matrix is empty" << endl;
+		}
+		else if ()
+		{
+			cout << "index out of range" << endl;
+		}
 	}
 };
 
 int main()
 {
 	Graph<int> graph;
+
+	graph.push('A');
+	graph.push('B');
+	graph.push('C');
+
 
 	return 0;
 }
