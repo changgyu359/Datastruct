@@ -7,6 +7,9 @@
       "RelativeMoniker": "D:0:0:{478C5777-559B-49C1-8144-4FB7D1F89DDF}|Program.vcxproj|solutionrelative:Program.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{0E405205-5FF0-4AD3-8E3F-9FBB80A50B41}|..\\Class 11th(Adjacency List)\\Class 11th(Adjacency List).vcxproj|C:\\Users\\user\\Desktop\\Datastruct\\Class 11th(Adjacency List)\\Class 11th(Adjacency List).cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{B3BD63EE-AB2B-4031-8451-8E3916CB3493}|..\\Class10th (Adajency matrix)\\Class10th (Adajency matrix).vcxproj|C:\\Users\\user\\Desktop\\Datastruct\\Class10th (Adajency matrix)\\Class10th (Adajency matrix).cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
@@ -44,8 +47,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Class 11th(Adjacency List).cpp",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Datastruct\\Class 11th(Adjacency List)\\Class 11th(Adjacency List).cpp",
+              "RelativeDocumentMoniker": "..\\Class 11th(Adjacency List)\\Class 11th(Adjacency List).cpp",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Datastruct\\Class 11th(Adjacency List)\\Class 11th(Adjacency List).cpp",
+              "RelativeToolTip": "..\\Class 11th(Adjacency List)\\Class 11th(Adjacency List).cpp",
+              "ViewState": "AgIAALMAAAAAAAAAAAAAAL4AAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-11-06T10:42:17.044Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -54,14 +70,14 @@
               "RelativeDocumentMoniker": "Program.cpp",
               "ToolTip": "C:\\Users\\user\\Desktop\\Datastruct\\Program\\Program.cpp",
               "RelativeToolTip": "Program.cpp",
-              "ViewState": "AgIAAGYAAAAAAAAAAAAAAHsAAAARAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-10-15T09:07:30.143Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Class9th (Hash Table).cpp",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\Datastruct\\Class9th (Hash Table)\\Class9th (Hash Table).cpp",
               "RelativeDocumentMoniker": "..\\Class9th (Hash Table)\\Class9th (Hash Table).cpp",
@@ -69,25 +85,24 @@
               "RelativeToolTip": "..\\Class9th (Hash Table)\\Class9th (Hash Table).cpp",
               "ViewState": "AgIAAAkAAAAAAAAAAAAAAMgAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-10-31T09:30:06.376Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-31T09:30:06.376Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Class10th (Adajency matrix).cpp",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\Datastruct\\Class10th (Adajency matrix)\\Class10th (Adajency matrix).cpp",
               "RelativeDocumentMoniker": "..\\Class10th (Adajency matrix)\\Class10th (Adajency matrix).cpp",
               "ToolTip": "C:\\Users\\user\\Desktop\\Datastruct\\Class10th (Adajency matrix)\\Class10th (Adajency matrix).cpp",
               "RelativeToolTip": "..\\Class10th (Adajency matrix)\\Class10th (Adajency matrix).cpp",
-              "ViewState": "AgIAAFoAAAAAAAAAAAAAAEYAAAAVAAAAAAAAAA==",
+              "ViewState": "AgIAAHIAAAAAAAAAAAAAAH8AAABGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-11-05T09:12:26.586Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Class8th (Priority Queue).cpp",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\Datastruct\\Class8th (Priority Queue)\\Class8th (Priority Queue).cpp",
               "RelativeDocumentMoniker": "..\\Class8th (Priority Queue)\\Class8th (Priority Queue).cpp",
@@ -95,12 +110,11 @@
               "RelativeToolTip": "..\\Class8th (Priority Queue)\\Class8th (Priority Queue).cpp",
               "ViewState": "AgIAAAwAAAAAAAAAAAAAAKIAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-10-28T10:17:58.182Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-28T10:17:58.182Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Source.cpp",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\Datastruct\\Class5th (Stack)\\Source.cpp",
               "RelativeDocumentMoniker": "..\\Class5th (Stack)\\Source.cpp",
@@ -108,12 +122,11 @@
               "RelativeToolTip": "..\\Class5th (Stack)\\Source.cpp",
               "ViewState": "AgIAAAwAAAAAAAAAAAAAACcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-10-23T10:01:23.565Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-23T10:01:23.565Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Class3th (Circle Linked List).cpp",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\Datastruct\\Class3th (Circle Linked List)\\Class3th (Circle Linked List).cpp",
               "RelativeDocumentMoniker": "..\\Class3th (Circle Linked List)\\Class3th (Circle Linked List).cpp",
@@ -121,12 +134,11 @@
               "RelativeToolTip": "..\\Class3th (Circle Linked List)\\Class3th (Circle Linked List).cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAJAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-10-21T09:45:36.43Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-21T09:45:36.43Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "Source.cpp",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\Datastruct\\Class4th (Vector)\\Source.cpp",
               "RelativeDocumentMoniker": "..\\Class4th (Vector)\\Source.cpp",
@@ -134,12 +146,11 @@
               "RelativeToolTip": "..\\Class4th (Vector)\\Source.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAC8AAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-10-22T10:13:10.177Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-22T10:13:10.177Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "Class6th (Linear Queue).cpp",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\Datastruct\\Class6th (Linear Queue)\\Class6th (Linear Queue).cpp",
               "RelativeDocumentMoniker": "..\\Class6th (Linear Queue)\\Class6th (Linear Queue).cpp",
@@ -147,12 +158,11 @@
               "RelativeToolTip": "..\\Class6th (Linear Queue)\\Class6th (Linear Queue).cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAF4AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-10-24T09:20:49.181Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-24T09:20:49.181Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "Source.cpp",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\Datastruct\\Class1th (Single Linked List)\\Source.cpp",
               "RelativeDocumentMoniker": "..\\Class1th (Single Linked List)\\Source.cpp",
@@ -164,7 +174,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "Source.cpp",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\Datastruct\\Class 7th(Circle Queue)\\Source.cpp",
               "RelativeDocumentMoniker": "..\\Class 7th(Circle Queue)\\Source.cpp",
@@ -176,7 +186,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "delete_scalar.cpp",
               "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\crt\\src\\vcruntime\\delete_scalar.cpp",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\crt\\src\\vcruntime\\delete_scalar.cpp",
